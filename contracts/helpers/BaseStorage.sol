@@ -11,7 +11,7 @@ contract BaseStorage is Owned {
         _;
     }
 
-    function setControllerAddr(address _controllerAddr) public {
+    function setControllerAddr(address _controllerAddr) public onlyOwner {
         controllerAddr = _controllerAddr;
     }
 }

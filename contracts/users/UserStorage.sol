@@ -20,6 +20,7 @@ contract UserStorage is BaseStorage {
         latestUserId++;
 
         profiles[latestUserId] = Profile(latestUserId, _username);
+
         return latestUserId;
     }
 }

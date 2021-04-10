@@ -18,7 +18,7 @@ contract TweetStorage is BaseStorage {
     function createTweet(uint256 _userId, string memory _text)
         public
         onlyController
-        returns (uint256)
+        returns (uint256 _newTweetId)
     {
         latestTweetId++;
 
